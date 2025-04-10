@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+	<style>
+         nav ul {
+            display: flex; 
+            justify-content: space-evenly; 
+            width: 100%; 
+            background-color: black; 
+            padding: 0; 
+            margin: 0; 
+            list-style-type: none; 
+        }
+		
+		nav ul li {
+            flex: 0 0 20%; 
+        }
+
+        nav ul li a {
+            color: white; 
+            text-decoration: none; 
+        }
+		
+		main {
+            display: flex;
+		}
+		
+		 article {
+            flex: 0 0 60%; 
+            margin: 1.5em 2.52525% 0 2.0202%;
+        }
+
+        article img {
+            max-width: 100%;
+            margin-bottom: 1em;
+        }
+		
+		 aside {
+            flex: 0 0 40%; 
+            padding: 2.0202%; 
+            max-width: 200px; 
+            min-height: 180px; 
+            background-color: #ffebc6; 
+			margin: 0 2.0202% 0 0; 
+        }
+		
+		aside li {
+			padding-right: 20px;
+		}
+		
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		
+		footer {
+			background-color: #f8c8d8;
+		}
+		
+		#galGrid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			gap: 20px;
+			align-items: stretch;
+			margin-bottom: 20px;
+		}
+		
+		#galGrid img {
+			border: 1px solid #CCCCCC;
+			box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+			max-width: 100%;
+		}
+
+	</style>
+	
+</head>
+<body>
+    <header>
+        <h2>Web Page Business Name</h2>
+        <h3>Subheading Text Can Go Here</h3>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 4</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <h1>Article Title Goes Here</h1>
+            <img src="images/M9_Lab_Pic.png" alt="Responsive Design with CSS Flexible Box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mattis odio. Maecenas commodo lacus ac dignissim interdum. Donec tincidunt metus nisl, a feugiat augue malesuada luctus. Etiam tincidunt ex lectus, eu blandit mi posuere vel. Sed gravida laoreet orci non sagittis. Cras finibus vitae quam vel pharetra. Pellentesque lobortis blandit tortor sed ultrices.</p>
+        </article>
+        
+        <aside>
+            <h2>A Little Aside Title</h2>
+            <ol>
+                <li>A List Item</li>
+                <li>Another List Item</li>
+                <li>Yet Another List Item</li>
+                <li>Still Listing</li>
+            </ol>
+        </aside>
+    </main>
+    
+	<h2>Sample Image Gallery</h2>
+	<div id="galGrid">
+		<img src="images/M9_1.png" alt="Girl standing with a brown horse in fall leaves">
+		<img src="images/M9_2.png" alt="Group of dogs running at the foot of a horse">
+		<img src="images/M9_3.png" alt="Black and white image of a girl riding a horse">
+		<img src="images/M9_4.png" alt="A girl riding a white horse">
+		<img src="images/M9_1.png" alt="Girl standing with a brown horse in fall leaves">
+		<img src="images/M9_2.png" alt="Group of dogs running at the foot of a horse">
+	</div>
+
+	
+    <footer>
+        <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mattis odio. Maecenas commodo lacus ac dignissim interdum. Donec tincidunt metus nisl a feugiat augue malesuada luctus, etiam tincidunt ex lectus.</small></p>
+    </footer>
+</body>
+</html>
